@@ -338,7 +338,7 @@ void setTopBatteryValue(uint32_t volts);
 #if defined(RADIO_TLITE)
   #define BATTERY_DIVIDER 27500    // TODO: fix when we have proper schematics
   #define VOLTAGE_DROP 20
-#elif defined(MANUFACTURER_RADIOMASTER) || defined(MANUFACTURER_JUMPER)
+#elif defined(MANUFACTURER_RADIOMASTER) || defined(BENCHCAST) || defined(MANUFACTURER_JUMPER)
   // --- MOSFET ---- R1 --- MCU
   //                     |__ R2 --- GND
   //
