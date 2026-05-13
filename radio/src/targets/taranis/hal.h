@@ -957,7 +957,7 @@
   #define LCD_HORIZONTAL_INVERT
   #define OLED_SCREEN
 #endif
-#if defined(RADIO_T14) || defined(RADIO_GX12) || defined(RADIO_V14)|| defined(BENCHCAST_ZERO) ||
+#if defined(RADIO_T14) || defined(RADIO_GX12) || defined(RADIO_V14)|| defined(BENCHCAST_ZERO)
   #define SSD1309_LCD
 #endif
 #if defined(PCBX9E)
