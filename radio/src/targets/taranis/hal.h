@@ -1029,7 +1029,7 @@
 
 #if defined(PCBXLITE) || defined(PCBX9LITE) || defined(PCBX7ACCESS) || \
     defined(RADIO_ZORRO) || defined(RADIO_POCKET) || defined(RADIO_X9DP2019) || \
-    defined(RADIO_GX12) || define(BENCHCAST_ZERO) || defined(RADIO_V12) || defined(RADIO_V14)
+    defined(RADIO_GX12) || defined(BENCHCAST_ZERO) || defined(RADIO_V12) || defined(RADIO_V14)
   #define I2C_B1_SCL_GPIO               GPIO_PIN(GPIOB, 8)  // PB.08
   #define I2C_B1_SDA_GPIO               GPIO_PIN(GPIOB, 9)  // PB.09
 #else
@@ -1045,7 +1045,7 @@
   #define EEPROM_WP_GPIO                GPIOB
   #define EEPROM_WP_GPIO_PIN            LL_GPIO_PIN_5  // PB.05
 #elif defined(RADIO_ZORRO) || defined(RADIO_POCKET) || defined(RADIO_TX12MK2)|| \
-      defined(RADIO_BOXER) || defined(RADIO_GX12) || define(BENCHCAST_ZERO) 
+      defined(RADIO_BOXER) || defined(RADIO_GX12) || defined(BENCHCAST_ZERO) 
   #define EEPROM_WP_GPIO                GPIOD
   #define EEPROM_WP_GPIO_PIN            LL_GPIO_PIN_10  // PD.10
 #elif defined(RADIO_X9DP2019)
@@ -1094,7 +1094,7 @@
 #endif
 
 // SD - SPI2
-#if defined(RADIO_FAMILY_T20) || defined(RADIO_T14) || defined(RADIO_T12MAX) || defined(RADIO_TPROS) || defined(RADIO_BUMBLEBEE) || defined(RADIO_GX12)
+#if defined(RADIO_FAMILY_T20) || defined(RADIO_T14) || defined(BENCHCAST_ZERO) || defined(RADIO_T12MAX) || defined(RADIO_TPROS) || defined(RADIO_BUMBLEBEE) || defined(RADIO_GX12)
   // Using chip, so no detect
 #else
 #if defined(PCBXLITE) || defined(PCBX9LITE)
@@ -1142,7 +1142,7 @@
   #define AUDIO_MUTE_GPIO               GPIO_PIN(GPIOB, 1)
   #define AUDIO_MUTE_DELAY              500  // ms
   #define INVERTED_MUTE_PIN
-#elif defined(MANUFACTURER_RADIOMASTER) || defined(MANUFACTURER_JUMPER) || defined(RADIO_LR3PRO)
+#elif defined(MANUFACTURER_RADIOMASTER) || defined(BENCHCAST_ZERO) || defined(MANUFACTURER_JUMPER) || defined(RADIO_LR3PRO)
   #define AUDIO_MUTE_GPIO               GPIO_PIN(GPIOE, 12)
   #define AUDIO_MUTE_DELAY              500  // ms
   #if defined(MANUFACTURER_JUMPER) || defined(RADIO_LR3PRO)
@@ -1153,7 +1153,7 @@
 #endif
 
 // Haptic
-#if defined(PCBXLITE) || defined(PCBX9LITE) || defined(RADIO_ZORRO) || define(BENCHCAST_ZERO) || defined(RADIO_POCKET) || defined(RADIO_TX12MK2)|| defined(RADIO_BOXER) || defined(RADIO_MT12) || defined(RADIO_T20V2)  || defined(RADIO_T14) || defined(RADIO_T12MAX) || defined(RADIO_TPROS) || defined(RADIO_V14) || defined(RADIO_V12) || defined(RADIO_BUMBLEBEE) || defined(RADIO_GX12)
+#if defined(PCBXLITE) || defined(PCBX9LITE) || defined(RADIO_ZORRO) || defined(BENCHCAST_ZERO) || defined(RADIO_POCKET) || defined(RADIO_TX12MK2)|| defined(RADIO_BOXER) || defined(RADIO_MT12) || defined(RADIO_T20V2)  || defined(RADIO_T14) || defined(RADIO_T12MAX) || defined(RADIO_TPROS) || defined(RADIO_V14) || defined(RADIO_V12) || defined(RADIO_BUMBLEBEE) || defined(RADIO_GX12)
   #define HAPTIC_PWM
   #define HAPTIC_GPIO                   GPIO_PIN(GPIOB, 3) // PB.03
   #define HAPTIC_GPIO_AF                GPIO_AF1
