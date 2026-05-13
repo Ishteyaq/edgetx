@@ -20,8 +20,11 @@
  */
 
 #pragma once
-
-#if defined(RADIO_TX12) || defined(RADIO_TX12MK2)
+#if defined(BENCHCAST_ZERO)
+  #define USB_NAME                     "Benchcast Zero"
+  #define USB_MANUFACTURER             'L', 'O', 'Z', 'T', 'A', 'I', 'N', ' '  /* 8 bytes */
+  #define USB_PRODUCT                  'Z', 'E', 'R', 'O', ' ', ' ', ' ', ' '  /* 8 Bytes */
+#elif defined(RADIO_TX12) || defined(RADIO_TX12MK2)
   #define USB_NAME                     "Radiomaster TX12"
   #define USB_MANUFACTURER             'R', 'M', '_', 'T', 'X', ' ', ' ', ' '  /* 8 bytes */
   #define USB_PRODUCT                  'R', 'M', ' ', 'T', 'X', '1', '2', ' '  /* 8 Bytes */
