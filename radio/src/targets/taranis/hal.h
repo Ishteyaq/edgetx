@@ -1021,6 +1021,8 @@
 #endif
 #if defined(RADIO_GX12)
   #define OLED_VCC_CS                   GPIO_PIN(GPIOD, 11) // PD.11
+#if defined(BENCHCAST_ZERO)
+  #define OLED_VCC_CS                   GPIO_PIN(GPIOA, 15) // PD.15
 #endif
 
 // I2C Bus 1: EEPROM and CAT5137 digital pot for volume control
